@@ -16,7 +16,9 @@
 <body>
 
 
-   <button class="btn btn-primary" onclick="getBankinh()"> click</button>
+    <input type="text" placeholder="Nhập bán kính" id="r">
+    <button class="btn btn-primary" type="submit" onclick="getbankinh()">submit</button>
+
     <table border="1">
         <thead>
             <tr>
@@ -36,8 +38,7 @@
 
 <script>
     function getbankinh(){
-        prompt("nhap Bán kính",value);
-        var r =prompt("nhap Bán kính",value) ;
+        var r = document.getElementById("r").value;
         const PI = 3.14;
          var c=2*r*PI;
          var d=r*r*PI;
